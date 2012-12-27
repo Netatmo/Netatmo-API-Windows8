@@ -1,0 +1,79 @@
+﻿.homepage section[role=main] {
+    margin-left: 160.5px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .homepage section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        margin-left: 100px;
+    }
+}
+
+.atmoresults {
+	font-size: 72px;
+	font-weight: 200;
+	color: #F1F1F1;
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0px;
+	width: 250.22px;
+	height: 143.54px;
+	padding-left: 30px;
+	-ms-grid-column: 2;
+	-ms-grid-row:1;
+}
+
+.credentials {
+	width: 400px;
+	padding: 10px;
+	-ms-grid-column: 1;
+	-ms-grid-row:1;
+	background-color: #599199;
+	background-image: linear-gradient(rgba(89, 145, 153, 0.2) 42.6%, rgb(111, 198, 211) 100%), url('/images/device.PNG');
+	background-repeat: repeat, no-repeat;
+	background-position: 0% 0%, right bottom;
+	background-size: auto, 50%;
+}
+
+.appViewContent {
+    width: 1023px;
+    height: calc(100% - 200px);
+	
+    display: -ms-grid;
+	
+    -ms-grid-columns: 434px 1fr;
+    -ms-grid-rows:1fr 
+}
+
+.results {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr ;
+	-ms-grid-rows:1fr 1fr;
+	
+	-ms-grid-column: 2;
+	
+
+}
+
+.resultstemp {
+	background-color: #F7BC04;
+	background-image: linear-gradient(#EE5C26, #F7BC04 100%);
+	-ms-grid-column: 1;
+	-ms-grid-row:1;
+	left: -1px;
+	margin: 0px 5px 5px;
+
+
+}
+.resultshumidity {
+	background-color:#3535F9;
+	background-image: linear-gradient(#020255, rgba(255, 255, 255, 0.267) 100%), url('/images/wet.png');
+	-ms-grid-column: 1;
+	-ms-grid-row:2;
+	margin: 5px 5px 0px;
+
+}
