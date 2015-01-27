@@ -22,8 +22,8 @@
     ///////// initiate & read data from an existing Netatmo device
     function Netatmo_Init_Reading() {
 
-        var clientID = "50bf37f6*******";                      // <--- Add your ouath client ID here (from http://dev.netatmo.com/dev/listapps)
-        var clientSecret = "PrzystYWj5*******";    // <--- Add your ouath client secret here (from http://dev.netatmo.com/dev/listapps)
+        var clientID = "50bf37f6*******";                      // <--- Add your ouath client ID here (from https://dev.netatmo.com/dev/listapps)
+        var clientSecret = "PrzystYWj5*******";    // <--- Add your ouath client secret here (from https://dev.netatmo.com/dev/listapps)
 
 
         var username = document.getElementById("email").value;      // Entered by user
@@ -95,7 +95,7 @@
     //// Get a the list of devices
     function Netatmo_Getdevicelist(token) {
 
-        var url = "http://api.netatmo.net/api/devicelist?access_token=" + token;
+        var url = "https://api.netatmo.net/api/devicelist?access_token=" + token;
 
         WinJS.xhr({ url: url, responseType: "json" }
         ).done(
@@ -125,7 +125,7 @@
 
     // Get measure point from a device
     function Netatmo_Getmeasure(token, device_id) {
-        var url = "http://api.netatmo.net/api/getmeasure?access_token=" + token + "&device_id=" + device_id;
+        var url = "https://api.netatmo.net/api/getmeasure?access_token=" + token + "&device_id=" + device_id;
 
 
         // As an example, get the lastest  Temperature & Humidity
